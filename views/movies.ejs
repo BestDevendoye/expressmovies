@@ -7,11 +7,14 @@
 
 </head>
 <body>
-<h1> movies</h1>
+<h1> movies<%= movietitle %></h1>
 
 <div>
 
-    azz azz aeee 
+<%for(movie of movies) { %>
+<div><%= movie.film %> <%= movie.annee %></div>
+  <%}%>
+
 </div>
 
 </body>

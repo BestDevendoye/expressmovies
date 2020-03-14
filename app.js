@@ -10,7 +10,13 @@ app.set("view engine","ejs")
 
 app.get("/movies", (req,res)=>
 {
-    res.render("movies")
+    const title = "film francer des annees 80"
+    const frenchfilm = [{
+        film:"abou",annee:2017
+    }, { film:"samba" , annee:2018},{film:"abacar",annee:2019}]
+    res.render("movies" , {
+        movies:frenchfilm,
+        movietitle:title})
 }
 )
 /*app.get("/movies-details", (req,res)=>
